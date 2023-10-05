@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--color-primario-oscuro);
+    font-family: var(--fuente-h1-h2-h3);
+
+}
+
+:root{
+    --color-primario-oscuro:#1B2838;
+    --color-primario-intermedio:#21526D;
+    --color-primario-claro:#79ADCB;
+    --color-secundario-oscuro:#1173BA;
+    --color-secundario-intermedio:#1A9FFF;
+    --color-secundario-claro:#89CEFF;
+    --color-acento-oscuro:#4C6B22;
+    --color-acento-intermedio:#4F8B20;
+    --color-acento-claro:#59BF40;
+    --color-negro:#0E141B;
+    --color-negro-1:#1E1E1E;
+    --color-negro-2:#343436;
+    --color-negro-3:#424345;
+    --color-blanco:#CCD8E3;
+
+    --fuente-h1-h2-h3:Arial, Helvetica, sans-serif;
+    --tamanio-fuente-h1-A:2.5em;
+    --tamanio-fuente-h1-B-logo:2.25em;
+    --tamanio-fuente-h1-C:2em;
+    --grosor-fuente-h1-A-B: bold;
+
+    --fuente-logo: 'Cinzel', serif;
+
+    --tamanio-fuente-h2-A: 1.5em;
+    --tamanio-fuente-h2-B:1.25em;
+
+    --tamanio-fuente-h3-A: 1em;
+    --tamanio-fuente-h3-B: 0.75em;
+
+}
+
+
+.logo{
+    font-family: var(--fuente-logo);
+    font-size: var(--tamanio-fuente-h1-B-logo);
+}
+
+/* Login */
+.login-container{
+    background-image: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)), url(../imagenes/prueba-roblox.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.formulario-container{
+   background-color: var(--color-primario-intermedio);
+   padding: 2rem;
+   box-shadow: -1px 10px 15px 0px rgba(0,0,0,0.75);
+   border-radius: 5px;
+}
+
+.formulario-container input,label{
+    display: flex;
+    margin-left: -10px;
+    padding: 5px;
+    width: 100%;
+    
+}
+
+.button-input{
+    margin: 10px;
+    margin-left: 6.4rem;
+}
+.button-registrar{
+    display: flex;
+    margin: 0.2rem;
+    margin-left: 4.5rem;
+}
+
+.formulario-container p{
+    margin-top: 0;
+   text-align: center;
+}
+
+.formulario-container .p-login{
+    margin-top: 1rem;
+    
+}
+
+
+
+main section h2 {
+    font-size: var(--tamanio-fuente-h1-B-logo);
+
+}
+
+
+/*Loading */
+
+.loading-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.loading-animation {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    animation: spin 1s infinite linear;
+}
+
+.loading-text {
+    font-size: 18px;
+}
+
+.loading-progress {
+    width: 100%;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.loading-bar {
+    width: 0;
+    height: 100%;
+    background-color: #3498db;
+    border-radius: 10px;
+    animation: progress 5s linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes progress {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
