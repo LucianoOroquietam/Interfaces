@@ -1,14 +1,3 @@
-body {
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: var(--color-primario-oscuro);
-    font-family: var(--fuente-h1-h2-h3);
-
-}
-
 :root{
     --color-primario-oscuro:#1B2838;
     --color-primario-intermedio:#21526D;
@@ -31,7 +20,7 @@ body {
     --tamanio-fuente-h1-C:2em;
     --grosor-fuente-h1-A-B: bold;
 
-    --fuente-logo: 'Cinzel', serif;
+    --fuente-logo: 'Cinzel', serif; /*'Oswald', sans-serif;*/
 
     --tamanio-fuente-h2-A: 1.5em;
     --tamanio-fuente-h2-B:1.25em;
@@ -39,14 +28,115 @@ body {
     --tamanio-fuente-h3-A: 1em;
     --tamanio-fuente-h3-B: 0.75em;
 
-}
+    --color-btn-carrito:var(--color-acento-claro);
 
+    --sombra-default-letra: 0px 0px 10px black;
+}
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--color-primario-oscuro);
+    font-family: var(--fuente-h1-h2-h3);
+
+}
 
 .logo{
     font-family: var(--fuente-logo);
     font-size: var(--tamanio-fuente-h1-B-logo);
 }
 
+main section h2 {
+    font-size: var(--tamanio-fuente-h1-B-logo);
+    
+}
+
+.banner-principal img{
+    width:100%;
+    object-fit: cover;
+    height: 13em;
+    display: flex;
+    overflow-y: auto;
+}
+
+.categoria{
+    font-size: var(--tamanio-fuente-h1-B);
+    padding: 0;
+    margin-bottom:0.25em;
+    color: var(--color-blanco);
+}
+.carrusel-destacado, .carrusel-chico, .cards-ofertas{
+    display: flex;
+    overflow-y: auto;
+}
+.cards-juegos-para-ti{
+    display:grid;
+    grid-template-columns: repeat(2,2fr);
+}
+.cards-juegos-para-ti h3{
+    font-size: var(--tamanio-fuente-h3-B);
+}
+
+
+.carrusel-chico .card img,.cards-ofertas .card img, .cards-juegos-para-ti .card img{
+    width: 8em;
+    object-fit: cover;
+    height: 8em; 
+}
+.carrusel-destacado .card img{
+    width: 12.5em;
+    object-fit: cover;
+    height: 12.5em; 
+}
+.cuerpo-card{
+    background-color: var(--color-primario-intermedio);
+    object-fit: cover;
+    height: 14em;
+}
+.carrusel-chico .cuerpo-card,.cards-ofertas .cuerpo-card, .cards-juegos-para-ti .cuerpo-card{
+    height: 8em;
+}
+.juegos-para-ti{
+    padding: 2em;  
+}
+.cuerpo-card h3{
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    color: var(--color-blanco);
+    text-shadow: var(--sombra-default-letra);
+}
+.carrusel-chico .cuerpo-card h3{
+    font-size: var(--tamanio-fuente-h3-B);
+}
+.carrusel-chico .titulo-juego {
+    font-size: var(--tamanio-fuente-h3-B);
+}
+.titulo-juego{
+    font-size: var(--tamanio-fuente-h2-B);
+    text-transform: capitalize;
+}
+.precio-oferta{
+    display: flex;
+    align-items: center;
+}
+.precio-descuento{
+    color: var(--color-negro-3);
+    font-size: var(--tamanio-fuente-h3-B);
+    text-decoration: line-through;
+}
+.cuerpo-card div {
+    background-color: var(--color-acento-intermedio);
+}
+.cuerpo-card div div{
+    background-color: var(--color-secundario-oscuro);
+    width: 100%;
+}
+.carrito{
+    
+}
 /* Login */
 .login-container{
     background-image: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)), url(../imagenes/prueba-roblox.jpg);
@@ -99,6 +189,23 @@ main section h2 {
 
 }
 
+
+footer {
+    background-color: var(--color-negro-3);
+    color: var(--color-blanco);
+}
+footer .fat-footer{
+    display: flex;
+    padding: 1em;
+}
+footer .fat-footer h2{
+    font-size: var(--tamanio-fuente-h2-B);
+}
+footer .fit-footer{
+    background-color: var(--color-negro-2);
+    font-size: var(--tamanio-fuente-h3-B);
+    text-align: center;
+}
 
 /*Loading */
 
